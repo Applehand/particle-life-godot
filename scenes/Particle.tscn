@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://imsl0i7uhf80"]
+
+[ext_resource type="Script" path="res://Particle.gd" id="1_xd0as"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5tp07"]
+radius = 3.16228
+
+[node name="Particle" type="RigidBody2D"]
+script = ExtResource("1_xd0as")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_5tp07")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

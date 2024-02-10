@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dosudujs7hcm"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_oic32"]
+[ext_resource type="PackedScene" uid="uid://imsl0i7uhf80" path="res://scenes/Particle.tscn" id="2_3gqyn"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_oic32")
+
+[node name="Particle" parent="." instance=ExtResource("2_3gqyn")]
+position = Vector2(525, 406)
